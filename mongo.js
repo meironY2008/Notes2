@@ -26,7 +26,7 @@ const note = new Note({
   important: true,
 })
 
-Note.find({ important: true }).then(result => {
+Note.find({}).then(result => {
     result.forEach(note => {
       console.log(note)
     })
